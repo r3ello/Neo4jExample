@@ -31,9 +31,11 @@ public class GraphDatabaseService {
 		lenderRepository.findByInterestRateBetween(0.0, 0.29).forEach(System.out::println);
 		
 		System.out.println("All Clients with balance amount greater than 1500 , Balance = client.totalCredit - client.totalDebit");
-		clientRepository.findByBalanceGreaterThan(500.0).forEach(System.out::println);
+		clientRepository.findByBalanceGreaterThan(1500.0).forEach(System.out::println);
 		
 		System.out.println("Total Loans amount Client: Client1");
 		System.out.println(clientRepository.getTotalLoansAmount("Client1"));
+		
+		
 	}
 }

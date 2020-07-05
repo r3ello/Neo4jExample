@@ -24,7 +24,6 @@ import lombok.ToString;
  */
 @NodeEntity
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
 public class Client {
 	  @Id @GeneratedValue private Long id;
@@ -36,5 +35,5 @@ public class Client {
 	   @Relationship(type = "PROVIDER")
 	   private List<Client> clients = new ArrayList<Client>();
 	   
-	   
+	
 }
