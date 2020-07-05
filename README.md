@@ -2,9 +2,9 @@
 Neo4j and Spring Boot Example:
 Many context of real live can be modeled as Graph, in this case I want show the relationship between Lender - Client and Client - Client .
 Lender loan money to client.
-![Lender loan to client](https://github.com/r3ello/NeoExample/blob/master/lender-client.jpg?raw=true)
+![Lender loan to client](https://github.com/r3ello/Neo4jExample/blob/master/lender-cliente.jpg?raw=true)
 Cliente can be provider to other client. 
-![Client as provider to other client](https://github.com/r3ello/NeoExample/blob/master/cliente-cliente.jpg?raw=true)
+![Client as provider to other client](https://github.com/r3ello/Neo4jExample/blob/master/cliente-cliente.jpg?raw=true)
 
 
 # Requirements
@@ -59,7 +59,7 @@ CREATE
   (Client2)-[:PROVIDER]->(Client1) ;
 ```
 You can see the data as shown in the following image 
-![financialNetwork](https://github.com/r3ello/NeoExample/blob/master/financialNetwork.jpg?raw=true)
+![financialNetwork](https://github.com/r3ello/Neo4jExample/blob/master/financialNetwork.jpg?raw=true)
 
 # Dependencies
 ```
