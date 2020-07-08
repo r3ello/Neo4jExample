@@ -17,7 +17,7 @@ import com.example.graphDatabase.model.Client;
  */
 public interface ClientRepository extends Neo4jRepository<Client, Long> {
 	
-	@Query("MATCH (client:Client)<-[r:LOAN]-(lender:Lender) " + 
+	@Query("MATCH (client:Client) " + 
 			"WHERE (client.totalCredit - client.totalDebit)  > $0 " + 
 			"RETURN client")
 	List<Client> findByBalanceGreaterThan(Double balance);
